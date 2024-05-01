@@ -9,7 +9,7 @@ var file_path = __dirname;
 var current_path = process.cwd();
 console.log(current_path)
 
-// 遍历查找到对应的指令，执行命令。
+// 遍历查找到对应的选项，手动解析。
 for(let i in argv){
     let _argv = argv[i];
     if(_argv == '-h' || _argv == '--help'){
