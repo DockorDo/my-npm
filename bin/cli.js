@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const path = require('path')
 
 var argv = process.argv;
 
@@ -16,3 +17,11 @@ for(let i in argv){
         console.log('这是一个help info')
     }
 }
+// 文件路径
+// console.log(path.join(__dirname,"..","cli.js"))
+
+// 获取命令行路径
+console.log(process.cwd())
+
+// 获取用户主目录
+console.log(process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE)

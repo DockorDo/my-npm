@@ -7,12 +7,16 @@
     "hello": "bin/cli.js"
   },
   "scripts": {
-    "test": "node bin/cli -t js -n q"
+    "test": "node bin/cli -t js -n q",
+    "install": "node install.js"
   },
-  "config": {
-    "port": 80
-  },
+  "files": [
+    "lib"
+  ],
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "husky": "^9.0.11"
+  }
 }
